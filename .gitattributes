@@ -1,0 +1,18 @@
+# Auto-detect text files and normalize line endings to LF on commit
+* text=auto
+
+# Ensure Windows scripts retain CRLF line endings
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.vbs text eol=crlf
+
+# Declare binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pt binary
+*.pth binary
+*.exe binary
+*.bin binary

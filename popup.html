@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wreciser</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="extension-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <img class="logo" src="assets/11b94.svg" alt="Wreciser" />
+      <h1 class="title">Wrecziser</h1>
+      <div class="tools-badge">
+        <span>Tools</span>
+      </div>
+    </header>
+
+    <!-- Status notification pill -->
+    <div id="status-pill" class="status-pill hidden">Ready</div>
+
+    <!-- Tools -->
+    <div class="tools-list">
+      <!-- Tool 1: Summarise this page -->
+      <button id="tool-summarise" class="tool-card" type="button" title="Create a concise summary from the current tab">
+        <span class="tool-icon-wrap">
+          <img class="tool-icon" src="assets/5a7a0.svg" alt="" />
+        </span>
+        <span class="tool-info">
+          <span class="tool-title">Summarise this page</span>
+          <span class="tool-desc">Create a concise summary from the current tab.</span>
+        </span>
+        <span class="tool-arrow" id="arrow-summarise">→</span>
+      </button>
+
+      <!-- Tool 2: LinkedIn Analyzer -->
+      <button id="tool-linkedin" class="tool-card" type="button" title="Extract LinkedIn profile and analyze candidate">
+        <span class="tool-icon-wrap">
+          <img class="tool-icon" src="assets/7cece.svg" alt="" />
+        </span>
+        <span class="tool-info">
+          <span class="tool-title">LinkedIn Analyzer</span>
+          <span class="tool-desc">Extract profile data and pass it to Resume Screener.</span>
+        </span>
+        <span class="tool-arrow" id="arrow-linkedin">→</span>
+      </button>
+
+      <!-- Tool 3: Resume Screener -->
+      <button id="tool-resume" class="tool-card" type="button" title="Compare a resume with a role or LinkedIn profile">
+        <span class="tool-icon-wrap">
+          <img class="tool-icon" src="assets/5a7a0.svg" alt="" />
+        </span>
+        <span class="tool-info">
+          <span class="tool-title">Resume Screener</span>
+          <span class="tool-desc">Compare a resume with a role or LinkedIn profile.</span>
+        </span>
+        <span class="tool-arrow" id="arrow-resume">→</span>
+      </button>
+    </div>
+
+    <!-- Quick Preview Container -->
+    <div id="quick-preview" class="quick-preview hidden">
+      <div class="preview-header">
+        <span id="preview-tag" class="preview-tag">Summary Ready</span>
+        <button id="preview-copy" class="preview-copy-btn" type="button">Copy</button>
+      </div>
+      <h3 id="preview-title" class="preview-title"></h3>
+      <p id="preview-text" class="preview-text"></p>
+    </div>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions-section">
+      <h2 class="section-title">Quick Actions</h2>
+      <div class="actions-row">
+        <button id="btn-download" class="action-btn action-download" type="button" disabled title="Download analysis as a text/markdown file">
+          <img class="action-icon" src="assets/fe9bd.png" alt="" />
+          <span>Download</span>
+        </button>
+        <button id="btn-open-wrecz" class="action-btn action-open" type="button" title="Open analysis in Wrecziser companion window">
+          <span>Open in Wrecziser</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer brand -->
+    <footer class="footer">
+      <img class="footer-brand" src="assets/by-wrecz.svg" alt="by wrecz" />
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+# ==============================================================================
+# Wrecziser .gitignore
+# ==============================================================================
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+build/
+eggs/
+.eggs/
+# Allow prebuilt frontend web assets so users don't need Node.js or npm
+!Wrecziser-Window-frontend/dist/**
+
+# Large Model Weights (>100MB GitHub limit)
+# Note: Kokoro weights can be downloaded via python "Wrecziser backend/download_model.py"
+# or auto-fetched by Hugging Face on first use.
+*.pth
+*.bin
+*.onnx
+Wrecziser backend/models/kokoro/kokoro-v1_0.pth
+
+# Node.js / Frontend
+node_modules/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.turbo
+
+# Rust / Tauri builds
+target/
+src-tauri/target/
+installer/src-tauri/target/
+Wrecziser-Window-frontend/src-tauri/target/
+*.pdb
+*.rs.bk
+
+# Runtime Logs & Temporary Files
+*.log
+native_host.log
+backend.log
+wrecziser_out.log
+debug_err.log
+*.tmp
+*.temp
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.suo
+*.user
+*.useros
+*.sln.docstates
+.figma/
+
+# Local Environment Variables
+.env
+.env.local
+.env.*.local

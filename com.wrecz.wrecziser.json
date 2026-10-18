@@ -1,0 +1,10 @@
+{
+    "name":  "com.wrecz.wrecziser",
+    "description":  "Wrecziser Local Backend Activator",
+    "path":  "C:\\Users\\shiv1\\AppData\\Local\\Programs\\Wrecziser\\native_host.exe",
+    "type":  "stdio",
+    "allowed_origins":  [
+                            "chrome-extension://okagbogangoibgjiojfnmpbicaakcpbm/",
+                            "chrome-extension://iiphddcpdpgkpckolghngefkebjaoaak/"
+                        ]
+}

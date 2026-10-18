@@ -1,0 +1,44 @@
+================================================================================
+                    WRECZISER - CHROME EXTENSION SETUP
+================================================================================
+
+Congratulations! Wrecziser desktop application has been installed successfully.
+
+Follow these 3 quick steps to enable the Wrecziser Chrome Extension:
+
+--------------------------------------------------------------------------------
+STEP 1: Open Chrome Extensions
+--------------------------------------------------------------------------------
+1. Open Google Chrome.
+2. In the URL address bar, type or paste:
+   chrome://extensions
+   and press ENTER.
+
+--------------------------------------------------------------------------------
+STEP 2: Enable Developer Mode
+--------------------------------------------------------------------------------
+1. Look at the top-right corner of the Extensions page.
+2. Turn ON the toggle switch labeled: "Developer mode".
+
+--------------------------------------------------------------------------------
+STEP 3: Load the Wrecziser Extension
+--------------------------------------------------------------------------------
+1. In the top-left corner, click the button labeled:
+   "Load unpacked"
+
+2. When the folder picker opens, copy and paste this exact folder path into
+   the address bar at the top of the picker, then press ENTER:
+
+   C:\Users\shiv1\AppData\Local\Programs\Wrecziser
+
+3. Click "Select Folder".
+
+--------------------------------------------------------------------------------
+ALL DONE!
+--------------------------------------------------------------------------------
+The Wrecziser icon will now appear in your Chrome toolbar.
+Pin it to your toolbar for instant 1-click summaries, LinkedIn job extraction,
+and resume targeting.
+
+Enjoy using Wrecziser!
+================================================================================
